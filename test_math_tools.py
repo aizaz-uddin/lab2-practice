@@ -1,4 +1,4 @@
-from math_tools import add, multiply, is_even
+from math_tools import add, multiply, is_even, subtract
 
 
 def test_add():
@@ -20,11 +20,18 @@ def test_is_even():
     assert is_even(7) == False
     assert is_even(0) == True
     print("test_is_even: ALL PASSED")
+    
+def test_subtract():
+    assert subtract(10,2) == 8
+    assert subtract(2,4) == -2
+    assert subtract(0,0) == 0
+    print("test_subtract: ALL PASSED")
 
 
 # Run all tests
 test_add()
 test_multiply()
 test_is_even()
+test_subtract()
 
 print("--- All tests passed! ---")
